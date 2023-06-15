@@ -31,8 +31,8 @@ You need a CUDA-enabled pytorch to run workloads. We recommend you to use the la
 
 ```bash
 sudo docker run --gpus all -it --rm -p 8888:8888 -v ~:/workspace \
-	--ipc=host --ulimit memlock=-1 --ulimit stack=67108864 \
-	nvcr.io/nvidia/pytorch:22.07-py3
+        --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 \
+        nvcr.io/nvidia/pytorch:23.05-py3
 ```
 
 After the docker is running, execute  `jupyter notebook` in the docker's shell to open this notebook.
